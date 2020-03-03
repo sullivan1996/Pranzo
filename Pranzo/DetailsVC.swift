@@ -1,22 +1,21 @@
 import UIKit
 
-class DetailsVC: UIViewController {
-    
-    var dish: Dish!
-    var imageDish = UIImageView()
-    var imageChef = UIImageView()
-    var madebyLabel = UILabel()
-    var chefName = UILabel()
-    var ingredientsLabel = UILabel()
-    var restaurantLabel = UILabel()
-    let toolbar = UIToolbar()
-    var adressLabel = UILabel()
-    var drinkLabel = UILabel()
-    let stackView = UIStackView()
+class DetailsVC: UIViewController, UIToolbarDelegate {
+ 
     let scrollView: UIScrollView = {
-          let scrollView = UIScrollView()
-          return scrollView
-      }()
+           let scrollView = UIScrollView()
+           return scrollView
+       }()
+    var dish: Dish!
+    let stackView = UIStackView()
+    let imageDish = UIImageView()
+    var foodTitle = UILabel()
+    var chefTitle = UILabel()
+    var restaruantTitle = UILabel()
+    let toolbar = UIToolbar()
+    let ingredientsLabel = UILabel()
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,13 +70,8 @@ class DetailsVC: UIViewController {
  
     func setupElements() {
         setupHeaderimage()
-     //  setupImagechef()
-        configureMadeby()
-        configureChefName()
-        configureIngredients()
-        setupRestaurantTitle()
-        setupAdress()
-        setupFreeDrinks()
+        setupfoodTitle()
+        setupIngredients()
     }
     
     func setupHeaderimage() {
@@ -91,78 +85,28 @@ class DetailsVC: UIViewController {
         imageDish.heightAnchor.constraint(equalToConstant: view.frame.height / 2).isActive = true
         imageDish.clipsToBounds = true
     }
-    
-    func setupImagechef() {
-       self.stackView.addArrangedSubview(imageChef)
-           imageChef.layer.cornerRadius = 45
-           imageChef.image = dish.image
-           imageChef.contentMode = .scaleAspectFill
-           imageChef.translatesAutoresizingMaskIntoConstraints = false
-           imageChef.topAnchor.constraint(equalTo: imageDish.bottomAnchor, constant: 20).isActive = true
-           imageChef.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20).isActive = true
-           imageChef.heightAnchor.constraint(equalToConstant: 90).isActive = true
-           imageChef.widthAnchor.constraint(equalToConstant: 90).isActive = true
-           imageChef.heightAnchor.constraint(equalToConstant: 380).isActive = true
-           imageChef.clipsToBounds = true
-       }
-    
-    func configureMadeby() {
-        self.stackView.addArrangedSubview(madebyLabel)
-        madebyLabel.font = .systemFont(ofSize: 22, weight: .regular)
-        madebyLabel.textColor = .black
-        madebyLabel.text = "Made by"
-        madebyLabel.translatesAutoresizingMaskIntoConstraints = false
-        madebyLabel.leadingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: 20).isActive = true
-        madebyLabel.topAnchor.constraint(equalTo: imageDish.bottomAnchor, constant: 30).isActive = true
+   
+    func setupfoodTitle() {
+        self.stackView.addArrangedSubview(foodTitle)
+        foodTitle.font = .systemFont(ofSize: 24, weight: .bold)
+        foodTitle.textColor = .black
+        foodTitle.text = "The Food"
+        foodTitle.translatesAutoresizingMaskIntoConstraints = false
+        foodTitle.topAnchor.constraint(equalTo: imageDish.bottomAnchor, constant: 20).isActive = true
+        foodTitle.leftAnchor.constraint(equalTo: scrollView.leftAnchor, constant: 20).isActive = true
     }
     
-    func configureChefName() {
-           self.stackView.addArrangedSubview(chefName)
-           chefName.font = .systemFont(ofSize: 22, weight: .bold)
-           chefName.textColor = .black
-           chefName.text = "\(dish.chef)"
-           chefName.translatesAutoresizingMaskIntoConstraints = false
-           chefName.leadingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: 10).isActive = true
-           chefName.topAnchor.constraint(equalTo: madebyLabel.bottomAnchor, constant: 5).isActive = true
-       }
-    
-    func configureIngredients() {
+    func setupIngredients() {
         self.stackView.addArrangedSubview(ingredientsLabel)
-        ingredientsLabel.font = .systemFont(ofSize: 18, weight: .regular)
+        ingredientsLabel.font = .systemFont(ofSize: 16, weight: .regular)
+        ingredientsLabel.numberOfLines = -1
         ingredientsLabel.textColor = .black
         ingredientsLabel.text = "\(dish.ingredients)"
         ingredientsLabel.translatesAutoresizingMaskIntoConstraints = false
-        ingredientsLabel.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20).isActive = true
-        ingredientsLabel.topAnchor.constraint(equalTo: chefName.bottomAnchor, constant: 20).isActive = true
+        ingredientsLabel.topAnchor.constraint(equalTo: foodTitle.bottomAnchor, constant: 20).isActive = true
+        ingredientsLabel.leftAnchor.constraint(equalTo: scrollView.leftAnchor, constant: 20).isActive = true
     }
     
-    func setupRestaurantTitle() {
-        self.stackView.addArrangedSubview(restaurantLabel)
-        restaurantLabel.font = .systemFont(ofSize: 24, weight: .bold)
-        restaurantLabel.textColor = .black
-        restaurantLabel.text = "\(dish.restaurant)"
-        restaurantLabel.translatesAutoresizingMaskIntoConstraints = false
-        restaurantLabel.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20).isActive = true
-        restaurantLabel.topAnchor.constraint(equalTo: ingredientsLabel.bottomAnchor, constant: 20).isActive = true
-    }
     
-    func setupAdress() {
-        self.stackView.addArrangedSubview(adressLabel)
-        adressLabel.font = .systemFont(ofSize: 20, weight: .regular)
-        adressLabel.textColor = .black
-        adressLabel.text = "\(dish.adress)"
-        adressLabel.translatesAutoresizingMaskIntoConstraints = false
-        adressLabel.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20).isActive = true
-        adressLabel.topAnchor.constraint(equalTo: restaurantLabel.bottomAnchor, constant: 20).isActive = true
-    }
-    
-    func setupFreeDrinks() {
-        self.stackView.addArrangedSubview(drinkLabel)
-        drinkLabel.font = .systemFont(ofSize: 16, weight: .regular)
-        drinkLabel.textColor = .black
-        drinkLabel.text = "Free drinks - showing the app to the cashier"
-        drinkLabel.translatesAutoresizingMaskIntoConstraints = false
-        drinkLabel.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20).isActive = true
-        drinkLabel.topAnchor.constraint(equalTo: adressLabel.bottomAnchor, constant: 20).isActive = true
-    }
+   
 }
