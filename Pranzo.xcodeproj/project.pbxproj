@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75829FE5240D5F9F004726BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75829FE4240D5F9F004726BB /* AppDelegate.swift */; };
+		75829FE7240D5F9F004726BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75829FE6240D5F9F004726BB /* SceneDelegate.swift */; };
+		75829FE9240D5F9F004726BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75829FE8240D5F9F004726BB /* ViewController.swift */; };
+		75829FEE240D5FA1004726BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75829FED240D5FA1004726BB /* Assets.xcassets */; };
+		75829FF1240D5FA1004726BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75829FEF240D5FA1004726BB /* LaunchScreen.storyboard */; };
+		75829FFC240D5FA1004726BB /* PranzoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75829FFB240D5FA1004726BB /* PranzoTests.swift */; };
+		7582A007240D5FA1004726BB /* PranzoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7582A006240D5FA1004726BB /* PranzoUITests.swift */; };
+		7582A018240D60EC004726BB /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7582A017240D60EC004726BB /* Dish.swift */; };
+		7582A01A240D633E004726BB /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7582A019240D633E004726BB /* Images.swift */; };
+		7582A01F240D66FE004726BB /* dishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7582A01E240D66FE004726BB /* dishCell.swift */; };
+		75F441BA240DACEB0002D534 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F441B9240DACEB0002D534 /* DetailsVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75829FF8240D5FA1004726BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75829FD9240D5F9F004726BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75829FE0240D5F9F004726BB;
+			remoteInfo = Pranzo;
+		};
+		7582A003240D5FA1004726BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75829FD9240D5F9F004726BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75829FE0240D5F9F004726BB;
+			remoteInfo = Pranzo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75829FE1240D5F9F004726BB /* Pranzo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pranzo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75829FE4240D5F9F004726BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75829FE6240D5F9F004726BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		75829FE8240D5F9F004726BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75829FED240D5FA1004726BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75829FF0240D5FA1004726BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75829FF2240D5FA1004726BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75829FF7240D5FA1004726BB /* PranzoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PranzoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75829FFB240D5FA1004726BB /* PranzoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PranzoTests.swift; sourceTree = "<group>"; };
+		75829FFD240D5FA1004726BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7582A002240D5FA1004726BB /* PranzoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PranzoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7582A006240D5FA1004726BB /* PranzoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PranzoUITests.swift; sourceTree = "<group>"; };
+		7582A008240D5FA1004726BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7582A017240D60EC004726BB /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		7582A019240D633E004726BB /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		7582A01E240D66FE004726BB /* dishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dishCell.swift; sourceTree = "<group>"; };
+		75F441B9240DACEB0002D534 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75829FDE240D5F9F004726BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75829FF4240D5FA1004726BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75829FFF240D5FA1004726BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75829FD8240D5F9F004726BB = {
+			isa = PBXGroup;
+			children = (
+				7582A01B240D66C9004726BB /* Cells */,
+				7582A014240D60CC004726BB /* Model */,
+				75829FE3240D5F9F004726BB /* Pranzo */,
+				75829FFA240D5FA1004726BB /* PranzoTests */,
+				7582A005240D5FA1004726BB /* PranzoUITests */,
+				75829FE2240D5F9F004726BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75829FE2240D5F9F004726BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75829FE1240D5F9F004726BB /* Pranzo.app */,
+				75829FF7240D5FA1004726BB /* PranzoTests.xctest */,
+				7582A002240D5FA1004726BB /* PranzoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75829FE3240D5F9F004726BB /* Pranzo */ = {
+			isa = PBXGroup;
+			children = (
+				75829FE4240D5F9F004726BB /* AppDelegate.swift */,
+				75829FE6240D5F9F004726BB /* SceneDelegate.swift */,
+				75829FE8240D5F9F004726BB /* ViewController.swift */,
+				75F441B9240DACEB0002D534 /* DetailsVC.swift */,
+				75829FED240D5FA1004726BB /* Assets.xcassets */,
+				75829FEF240D5FA1004726BB /* LaunchScreen.storyboard */,
+				75829FF2240D5FA1004726BB /* Info.plist */,
+			);
+			path = Pranzo;
+			sourceTree = "<group>";
+		};
+		75829FFA240D5FA1004726BB /* PranzoTests */ = {
+			isa = PBXGroup;
+			children = (
+				75829FFB240D5FA1004726BB /* PranzoTests.swift */,
+				75829FFD240D5FA1004726BB /* Info.plist */,
+			);
+			path = PranzoTests;
+			sourceTree = "<group>";
+		};
+		7582A005240D5FA1004726BB /* PranzoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7582A006240D5FA1004726BB /* PranzoUITests.swift */,
+				7582A008240D5FA1004726BB /* Info.plist */,
+			);
+			path = PranzoUITests;
+			sourceTree = "<group>";
+		};
+		7582A014240D60CC004726BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7582A017240D60EC004726BB /* Dish.swift */,
+				7582A019240D633E004726BB /* Images.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7582A01B240D66C9004726BB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7582A01E240D66FE004726BB /* dishCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75829FE0240D5F9F004726BB /* Pranzo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7582A00B240D5FA1004726BB /* Build configuration list for PBXNativeTarget "Pranzo" */;
+			buildPhases = (
+				75829FDD240D5F9F004726BB /* Sources */,
+				75829FDE240D5F9F004726BB /* Frameworks */,
+				75829FDF240D5F9F004726BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pranzo;
+			productName = Pranzo;
+			productReference = 75829FE1240D5F9F004726BB /* Pranzo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75829FF6240D5FA1004726BB /* PranzoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7582A00E240D5FA1004726BB /* Build configuration list for PBXNativeTarget "PranzoTests" */;
+			buildPhases = (
+				75829FF3240D5FA1004726BB /* Sources */,
+				75829FF4240D5FA1004726BB /* Frameworks */,
+				75829FF5240D5FA1004726BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75829FF9240D5FA1004726BB /* PBXTargetDependency */,
+			);
+			name = PranzoTests;
+			productName = PranzoTests;
+			productReference = 75829FF7240D5FA1004726BB /* PranzoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7582A001240D5FA1004726BB /* PranzoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7582A011240D5FA1004726BB /* Build configuration list for PBXNativeTarget "PranzoUITests" */;
+			buildPhases = (
+				75829FFE240D5FA1004726BB /* Sources */,
+				75829FFF240D5FA1004726BB /* Frameworks */,
+				7582A000240D5FA1004726BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7582A004240D5FA1004726BB /* PBXTargetDependency */,
+			);
+			name = PranzoUITests;
+			productName = PranzoUITests;
+			productReference = 7582A002240D5FA1004726BB /* PranzoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75829FD9240D5F9F004726BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Sullivan De carli";
+				TargetAttributes = {
+					75829FE0240D5F9F004726BB = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					75829FF6240D5FA1004726BB = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 75829FE0240D5F9F004726BB;
+					};
+					7582A001240D5FA1004726BB = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 75829FE0240D5F9F004726BB;
+					};
+				};
+			};
+			buildConfigurationList = 75829FDC240D5F9F004726BB /* Build configuration list for PBXProject "Pranzo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75829FD8240D5F9F004726BB;
+			productRefGroup = 75829FE2240D5F9F004726BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75829FE0240D5F9F004726BB /* Pranzo */,
+				75829FF6240D5FA1004726BB /* PranzoTests */,
+				7582A001240D5FA1004726BB /* PranzoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75829FDF240D5F9F004726BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75829FF1240D5FA1004726BB /* LaunchScreen.storyboard in Resources */,
+				75829FEE240D5FA1004726BB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75829FF5240D5FA1004726BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7582A000240D5FA1004726BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75829FDD240D5F9F004726BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75829FE9240D5F9F004726BB /* ViewController.swift in Sources */,
+				7582A018240D60EC004726BB /* Dish.swift in Sources */,
+				7582A01A240D633E004726BB /* Images.swift in Sources */,
+				75829FE5240D5F9F004726BB /* AppDelegate.swift in Sources */,
+				75F441BA240DACEB0002D534 /* DetailsVC.swift in Sources */,
+				75829FE7240D5F9F004726BB /* SceneDelegate.swift in Sources */,
+				7582A01F240D66FE004726BB /* dishCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75829FF3240D5FA1004726BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75829FFC240D5FA1004726BB /* PranzoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75829FFE240D5FA1004726BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7582A007240D5FA1004726BB /* PranzoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75829FF9240D5FA1004726BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75829FE0240D5F9F004726BB /* Pranzo */;
+			targetProxy = 75829FF8240D5FA1004726BB /* PBXContainerItemProxy */;
+		};
+		7582A004240D5FA1004726BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75829FE0240D5F9F004726BB /* Pranzo */;
+			targetProxy = 7582A003240D5FA1004726BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75829FEF240D5FA1004726BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75829FF0240D5FA1004726BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7582A009240D5FA1004726BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7582A00A240D5FA1004726BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7582A00C240D5FA1004726BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GNP5RY8L8R;
+				INFOPLIST_FILE = Pranzo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sullivan-decarli.Pranzo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7582A00D240D5FA1004726BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GNP5RY8L8R;
+				INFOPLIST_FILE = Pranzo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sullivan-decarli.Pranzo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7582A00F240D5FA1004726BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GNP5RY8L8R;
+				INFOPLIST_FILE = PranzoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sullivan-decarli.PranzoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pranzo.app/Pranzo";
+			};
+			name = Debug;
+		};
+		7582A010240D5FA1004726BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GNP5RY8L8R;
+				INFOPLIST_FILE = PranzoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sullivan-decarli.PranzoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pranzo.app/Pranzo";
+			};
+			name = Release;
+		};
+		7582A012240D5FA1004726BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GNP5RY8L8R;
+				INFOPLIST_FILE = PranzoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sullivan-decarli.PranzoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pranzo;
+			};
+			name = Debug;
+		};
+		7582A013240D5FA1004726BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GNP5RY8L8R;
+				INFOPLIST_FILE = PranzoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sullivan-decarli.PranzoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pranzo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75829FDC240D5F9F004726BB /* Build configuration list for PBXProject "Pranzo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7582A009240D5FA1004726BB /* Debug */,
+				7582A00A240D5FA1004726BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7582A00B240D5FA1004726BB /* Build configuration list for PBXNativeTarget "Pranzo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7582A00C240D5FA1004726BB /* Debug */,
+				7582A00D240D5FA1004726BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7582A00E240D5FA1004726BB /* Build configuration list for PBXNativeTarget "PranzoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7582A00F240D5FA1004726BB /* Debug */,
+				7582A010240D5FA1004726BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7582A011240D5FA1004726BB /* Build configuration list for PBXNativeTarget "PranzoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7582A012240D5FA1004726BB /* Debug */,
+				7582A013240D5FA1004726BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75829FD9240D5F9F004726BB /* Project object */;
+}
